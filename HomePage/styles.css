@@ -626,11 +626,54 @@ main {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* ---------- DIVIDER ---------- */
+
+.divider {
+    display: flex;
+    width: 1150px;
+    height: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 55px;
+    margin-top: 45px;
+}
+
+.box1{
+    height: 20px;
+    width: 450px;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00);
+    filter: blur(5px);
+}
+
+.box2{
+    height: 20px;
+    width: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
+.box2-text{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gold;
+}
+
+
+.box3{
+    height: 20px;
+    width: 450px;
+    background: linear-gradient(45deg,  #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    filter: blur(5px);
+}
+
 /* ---------- VIDEO ---------- */
 .video-container {
     width: 80%;
     margin: 20px 0;
     z-index: 10;
+    box-shadow: 0px 0px 19px 5px rgba(255, 255, 255, 0.75);
 }
 
 .video-container video {
