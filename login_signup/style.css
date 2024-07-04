@@ -1,18 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-	font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
 }
 
-body,
-input {
-  font-family: 'Montserrat', sans-serif;
-  
-}
+
 
 .container {
   position: relative;
@@ -110,149 +105,140 @@ background-position: center;
 /*NAVBAR*/
 
 nav {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background: #19191B;
-    padding: 0px 3%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #19191B;
+  padding: 0px 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
 
 nav .brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav .logo {
-    margin: 15px 15px 15px 0px;
+  margin: 15px 15px 15px 0px;
 }
 
 nav .logo img {
-    height: 50px;
+  height: 50px;
 }
 
 nav .brand .brand-name {
-    color: #ffffff;
-    /* font-family: "Roboto", sans-serif; */
-    font-weight: 900;
-    font-size: 30px;
-    margin: 15px 15px 15px 0px;
+  color: #ffffff;
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 900;
+  font-size: 30px;
+  margin: 15px 15px 15px 0px;
 }
 
 nav ul {
-    list-style: none;
+  list-style: none;
 }
 
 nav ul li {
-    position: relative;
-    float: left;
+  position: relative;
+  float: left;
 }
 
 nav ul li a {
-    color: #ffffff;
-    font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
 font-weight: 900;
-    font-size: 20px;
-    padding: 20px;
-    display: block;
-    transition: all ease 0.3s;
-    text-decoration: none;
+  font-size: 20px;
+  padding: 20px;
+  display: block;
+  transition: all ease 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ff1361;
+  color: #ff1361;
 }
 
 nav ul li i {
-    font-size: 12px;
-    margin-left: 2px;
+  font-size: 12px;
+  margin-left: 2px;
 }
 
 nav ul li ul {
-    position: absolute;
-    left: 0;
-    width: 144px;
-    background: #19191B;
-    display: none;
+  position: absolute;
+  left: 0;
+  width: 144px;
+  background: #19191B;
+  display: none;
 }
 
 nav ul li ul li {
-    width: 100%;
-    border-top: 1px solid #141414;
+  width: 100%;
+  border-top: 1px solid #141414;
 }
 
 /* nav ul li:focus-within>ul,
 nav ul li:hover>ul {
-    display: initial;
+  display: initial;
 } */
 
 nav ul li ul li a:hover {
-    color: #ff1361;
+  color: #ff1361;
 }
 
 .menu-btn {
-    color: #ffffff;
-    font-size: 25px;
-    margin: 15px;
-    cursor: pointer;
-    display: none;
+  color: #ffffff;
+  font-size: 25px;
+  margin: 15px;
+  cursor: pointer;
+  display: none;
 }
 
 /* ---------- RESPONSIVE NAVBAR ---------- */
 @media(max-width: 1150px) {
-    .menu-btn {
-        display: initial;
-    }
+  .menu-btn {
+      display: initial;
+  }
 
-    .menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #19191B;
-        border-top: 1px solid #141414;
-        display: none;
-    }
+  .menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #19191B;
+      border-top: 1px solid #141414;
+      display: none;
+  }
 
-    .menu.active {
-        display: initial;
-    }
+  .menu.active {
+      display: initial;
+  }
 
-    nav ul li {
-        width: 100%;
-    }
+  nav ul li {
+      width: 100%;
+  }
 
-    nav ul li a:hover {
-        color: #ff1361;
-    }
+  nav ul li a:hover {
+      color: #ff1361;
+  }
 
-    nav ul li ul {
-        position: relative;
-        width: 100%;
-    }
+  nav ul li ul {
+      position: relative;
+      width: 100%;
+  }
 
-    nav ul li ul li {
-        margin-left: 50px;
-    }
+  nav ul li ul li {
+      margin-left: 50px;
+  }
 }
 
 @media(max-width: 400px) {
-    nav .brand .brand-name {
-        display: none;
-    }
+  nav .brand .brand-name {
+      display: none;
+  }
 }
-
-
-
-
-
-
-
-
 
 
 

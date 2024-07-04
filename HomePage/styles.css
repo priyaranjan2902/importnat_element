@@ -728,18 +728,7 @@ footer p i {
 }
 
 /* ---------- SCROLLBAR ---------- */
-::-webkit-scrollbar {
-    width: 5px;
-}
 
-::-webkit-scrollbar-track {
-    background: #000000;
-}
-
-::-webkit-scrollbar-thumb {
-    background: gray;
-    border-radius: 2.5px;
-}
 
 
 .starss {
