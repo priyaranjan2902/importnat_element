@@ -447,31 +447,27 @@ nav ul li ul li a:hover {
 	50% { background-position: 100% 50%; }
 	100% { background-position: 0px 50%; }
 }
+
+
 .about-us p{
-  /* margin-top: 2vw; */
-  font-size: 2vw;
-  margin-bottom: 5vw;
-  font-family: "Alegreya sans", sans-serif;
-  font-weight: 400;
-  z-index: 10;
+    /* margin-top: 2vw; */
+    font-size: 2vw;
+    margin-bottom: 5vw;
+    font-family: "Alegreya sans", sans-serif;
+    font-weight: 400;
+    z-index: 10;
 }
 
 .about-us img{
-  max-width: 100%;
-  height: auto;
-  display: block;
-  transition: 0.5s ease;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
 }
 
 .team{
     text-align: center;
     color: aliceblue;
-}
-
-.team h2{
-    font-size: 5vw;
-    margin-bottom: 25px;
-    position: relative;
 }
 
 .our-team{
@@ -581,68 +577,68 @@ transform: rotate(120deg);
 }
 
 @media (max-width: 768px) {
-    .about-us h1,
+
     .team h2 {
         font-size: 10vw;
-    }
-
-    .about-us p {
-        font-size: 2vw;
-    }
-
-    .our-team .card {
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    #container {
-        margin-top: 15vw;
-        height: 20vw;
-    }
-
-    #text1,
-    #text2 {
-        font-size: 10vw;
-    }
-}
-
-@media (max-width: 480px) {
-    .about-us h1,
-    .team h2 {
-        font-size: 12vw;
     }
 
     .about-us p {
         font-size: 3vw;
     }
 
-    #container {
-        margin-top: 20vw;
-        height: 25vw;
+    .our-team .card {
+        width: 100%;
+        margin: 20px 0;
     }
+}
 
-    #text1,
-    #text2 {
+@media (max-width: 480px) {
+    .team h2 {
         font-size: 12vw;
     }
+
+    .about-us p {
+        font-size: 4vw;
+    }
+
 }
 
 footer {
-  width: 100%;
-  background-color: #000000;
-  padding: 20px;
-  /* z-index: 100000; */
-  position: sticky;
+    width: 100%;
+    background-color: #000000;
+    padding: 20px;
+    z-index: 1000;
 }
 
 footer p {
-  color: white;
-  font-size: 20px;
-  font-family: 'Ubuntu', sans-serif;
-  text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
 }
 
 footer p i {
-  color: red;
-  margin: 2px;
+    color: red;
+    margin: 2px;
+}
+
+/* ---------- RESPONSIVE FOOTER ---------- */
+@media(max-width: 576px) {
+    footer p {
+        font-size: 15px;
+    }
+}
+
+/* ---------- SCROLLBAR ---------- */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 2.5px;
 }
