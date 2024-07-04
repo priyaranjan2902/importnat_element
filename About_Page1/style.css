@@ -237,52 +237,30 @@ nav ul li ul li a:hover {
     z-index: 10;
 }
 
+
 .about-us{
+ 
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: 20px auto;
+    margin: 8rem auto;
     color: aliceblue ;
 }
-
-.team h2{
-    font-size: 5vw;
-    margin-bottom: 25px;
-    position: relative;
-    text-transform: uppercase;
-    background-image: linear-gradient(
-    -45deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-	animation: animated_text 6s ease-in-out infinite;
-	-moz-animation: animated_text 6s ease-in-out infinite;
-	-webkit-animation: animated_text 6s ease-in-out infinite;
+.lottier{
+  
+  max-width: 400px; 
+  height: auto;
 }
-@keyframes animated_text {
-	0% { background-position: 0px 50%; }
-	50% { background-position: 100% 50%; }
-	100% { background-position: 0px 50%; }
+.first-para{
+  margin-top: 10rem;
 }
-
-
 .about-us p{
     /* margin-top: 2vw; */
-    font-size: 2vw;
-    margin-bottom: 5vw;
+    font-size: 1.7vw;
+    margin-bottom: 4vw;
     font-family: "Alegreya sans", sans-serif;
     font-weight: 400;
     z-index: 10;
@@ -431,6 +409,27 @@ transform: rotate(120deg);
         font-size: 4vw;
     }
 
+    .about-us{
+ 
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      margin: 5rem auto;
+      color: aliceblue ;
+  }
+
+  .lottier{
+  
+    max-width: 70%; 
+    height: auto;
+  }
+  .first-para{
+    margin-top: 5rem;
+  }
+
 }
 
 footer {
@@ -457,6 +456,7 @@ footer p i {
     footer p {
         font-size: 15px;
     }
+    
 }
 
 /* ---------- SCROLLBAR ---------- */
