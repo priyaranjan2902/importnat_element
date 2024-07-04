@@ -103,6 +103,159 @@ background-position: center;
   animation:move-background 70s linear infinite;
     
 }
+
+
+
+
+/*NAVBAR*/
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #19191B;
+    padding: 0px 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo {
+    margin: 15px 15px 15px 0px;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav .brand .brand-name {
+    color: #ffffff;
+    /* font-family: "Roboto", sans-serif; */
+    font-weight: 900;
+    font-size: 30px;
+    margin: 15px 15px 15px 0px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    position: relative;
+    float: left;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+font-weight: 900;
+    font-size: 20px;
+    padding: 20px;
+    display: block;
+    transition: all ease 0.3s;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ff1361;
+}
+
+nav ul li i {
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 144px;
+    background: #19191B;
+    display: none;
+}
+
+nav ul li ul li {
+    width: 100%;
+    border-top: 1px solid #141414;
+}
+
+/* nav ul li:focus-within>ul,
+nav ul li:hover>ul {
+    display: initial;
+} */
+
+nav ul li ul li a:hover {
+    color: #ff1361;
+}
+
+.menu-btn {
+    color: #ffffff;
+    font-size: 25px;
+    margin: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+/* ---------- RESPONSIVE NAVBAR ---------- */
+@media(max-width: 1150px) {
+    .menu-btn {
+        display: initial;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #19191B;
+        border-top: 1px solid #141414;
+        display: none;
+    }
+
+    .menu.active {
+        display: initial;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a:hover {
+        color: #ff1361;
+    }
+
+    nav ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    nav ul li ul li {
+        margin-left: 50px;
+    }
+}
+
+@media(max-width: 400px) {
+    nav .brand .brand-name {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 .forms-container {
   position: absolute;
   width: 100%;
@@ -338,7 +491,7 @@ font-size: 1rem;
   font-weight: 600;
   line-height: 1;
   font-size: 1.5rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .panel p {
@@ -532,7 +685,7 @@ font-size: 1rem;
     left: 50%;
   }
   .panel h3{
-    margin-top:2.5rem;
+    margin-top:0.5rem;
   }
   .title{
     margin-top: 2.5rem;
@@ -558,206 +711,4 @@ footer p {
 footer p i {
   color: red;
   margin: 2px;
-}
-
-.nav-bar {
-  height: 70px;
-  background:#191919;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 2px -2px rgba(204, 202, 202, 0.2);
-
-}
-
-.brand {
-  position: absolute;
-  padding-left: 10px;
-  float: left;
-  line-height: 70px;
-  text-transform: uppercase;
-  font-size: 1.8em;
-  display: flex;
-
-  
-}
-.logo-text{
-  color: #ffffff;
-  /* font-family: cursive; */
-  font-weight: 900;
-  font-style: inherit;
-  padding-top: 0.4rem;
-}
-.brand a img {
-	max-height: 80px;
-}
-.brand a,
-.brand a:visited {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.nav-container {
-  margin: 0 auto;
-}
-
-nav {
-  float: right;
-}
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-nav ul li {
-  float: left;
-  position: relative;
-}
-nav ul li a,
-nav ul li a:visited {
-  display: block;
-  padding: 0 20px;
-  line-height: 70px;
-  background: #191919;
-  color: #ffffff;
-  text-decoration: none;
-}
-nav ul li a:hover,
-nav ul li a:visited:hover {
-
-  /* background:linear-gradient(120deg, transparent, #2e0331,transparent);
-  background-clip: padding-box; */
-
-  color: #a10a0a;
-}
-nav ul li a:not(:only-child):after,
-nav ul li a:visited:not(:only-child):after {
-  padding-left: 4px;
-  content: ' ▾';
-}
-nav ul li ul li {
-  min-width: 190px;
-}
-nav ul li ul li a {
-  padding: 15px;
-  line-height: 20px;
-}
-
-.nav-dropdown {
-  position: absolute;
-  display: none;
-  z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-}
-.nav-mobile {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background:#333333;
-  height: 70px;
-  width: 70px;
-}
-li{
-  font-size: 1.6rem;
-}
-
-@media only screen and (max-width: 798px) {
-  .nav-mobile {
-    display: block;
-  }
-
-  nav {
-    width: 100%;
-    padding: 70px 0 15px;
-  }
-  nav ul {
-    display: none;
-  }
-  nav ul li {
-    float: none;
-    /* text-align: justify; */
-  }
-  nav ul li a {
-    padding: 15px;
-    line-height: 18px;
-	padding-left: 25%;
-	 
-  }
-  nav ul li ul li a {
-    padding-left: 30%;
-  }
-
-  .nav-dropdown {
-    position: static;
-  }
-  .brand{
-    display: flex;
-    justify-content: center;
-    align-items: c;
-  }
-	.brand a img {
-		/* max-height: 40px; */
-		/* margin-top: 10px; */
-    margin-top: .5rem;
-    height: 60px;
-    width: 70px;
-    /* background: transparent; */
-	}
- .logo-text{
-  display: none;
- }
-  .nav-mobile {
-  
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: transparent;
-    /* background:#333333; */
-    height: 60px;
-    width: 60px;
-  }
-}
-@media screen and (min-width: 799px) {
-  .nav-list {
-    display: block !important;
-  }
-}
-#nav-toggle {
-  position: absolute;
-  left: 18px;
-  top: 22px;
-  cursor: pointer;
-  padding: 10px 35px 16px 0px;
-}
-#nav-toggle span,
-#nav-toggle span:before,
-#nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 5px;
-  width: 35px;
-  background: #ffffff;
-  position: absolute;
-  display: block;
-  content: '';
-  transition: all 300ms ease-in-out;
-}
-#nav-toggle span:before {
-  top: -10px;
-}
-#nav-toggle span:after {
-  bottom: -10px;
-}
-#nav-toggle.active span {
-  background-color: transparent;
-}
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
-}
-#nav-toggle.active span:before {
-  transform: rotate(45deg);
-}
-#nav-toggle.active span:after {
-  transform: rotate(-45deg);
 }
