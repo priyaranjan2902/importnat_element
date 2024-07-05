@@ -311,7 +311,6 @@ main {
 #text1,
 #text2 {
     position: absolute;
-    /* color: white; */
     background-image: linear-gradient(-90deg,
             #231557 0%,
             #44107a 29%,
